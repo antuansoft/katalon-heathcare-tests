@@ -8,16 +8,14 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: "show github.workspace"
+    - name: "show wokspace path"
       run: echo '${{ github.workspace }}'
-    - name: "dir"
+    - name: "show wokspace files"
       run: dir
-    - name: "dir2"
-      run: dir "./Test Suites"
-    - name: Katalon Studio Github Action
+    - name: Execute Test Suite Test
       uses: katalon-studio/katalon-studio-github-action@v4.0
       with:
-         version: '9.6.0'
+         version: '10.0.1'
          projectPath: '${{ github.workspace }}'
          args: '-noSplash -retry=0 -browserType=Chrome -testSuitePath="Test Suites/TS_RegressionTest" -apiKey= "294aa7c5-5a52-44cd-b64a-40994dd7e917" --config -webui.autoUpdateDrivers=true'
          
