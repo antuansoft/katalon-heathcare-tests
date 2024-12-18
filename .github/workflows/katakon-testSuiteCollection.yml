@@ -1,4 +1,4 @@
-name: katalon Tests
+name: katalon Tests Suite
 on: 
   workflow_dispatch:
 
