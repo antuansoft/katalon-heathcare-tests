@@ -8,6 +8,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+    - name: log1
+      run: echo "********************************************"      
+    - name: "show github.workspace"
+      run: echo '${{ github.workspace }}'
+    - name: log3
+      run: echo "********************************************"            
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v4.0
       with:
