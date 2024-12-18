@@ -12,8 +12,10 @@ jobs:
       run: echo '${{ github.workspace }}'
     - name: "dir"
       run: dir
-
-
+    - name: "cd"
+      run: cd Test Suites
+    - name: "dir2"
+      run: dir
  #   - name: Katalon Studio Github Action
  #     uses: katalon-studio/katalon-studio-github-action@v4.0
  #     with:
