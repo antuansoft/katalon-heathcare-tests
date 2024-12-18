@@ -19,5 +19,5 @@ jobs:
       with:
          version: '9.6.0'
          projectPath: '${{ github.workspace }}'
-         args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites" -apiKey= "294aa7c5-5a52-44cd-b64a-40994dd7e917" --config -webui.autoUpdateDrivers=true'
-          
+         args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/TS_RegressionTest.ts" -apiKey= "294aa7c5-5a52-44cd-b64a-40994dd7e917" --config -webui.autoUpdateDrivers=true'
+         
